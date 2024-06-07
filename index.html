@@ -5,12 +5,28 @@
     <style>
         h2 {
             text-align: center;
-            font-family: impact, sans-serif; /* フォントをimpactに変更 */
+            font-family: impact, sans-serif;
         }
         .company-name {
             text-align: center;
-            font-family: impact, sans-serif; /* フォントをimpactに変更 */
-            font-size: 20px; /* 小さめのフォントサイズに設定 */
+            font-family: impact, sans-serif;
+            font-size: 54px;
+            margin-bottom: 0;
+        }
+        .slogan {
+            text-align: center;
+            font-family: impact, sans-serif;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        .image-space {
+            text-align: center;
+            margin-top: 10px; /* 画像との間隔を10pxに調整 */
+            margin-bottom: 10px; /* 画像との間隔を10pxに調整 */
+        }
+        img {
+            display: block;
+            margin: 0 auto;
         }
         form {
             width: 300px;
@@ -44,21 +60,24 @@
     </style>
 </head>
 <body>
-    <h2 class="company-name">BELAIR SYSTEMS</h2>
-    <div class="center">
+    <div class="image-space">
         <img src="画像1.jpg" alt="会社ロゴ">
     </div>
-    <h2>ログイン画面</h2>
     <div class="center">
-        <img src="画像1.jpg" alt="会社ロゴ">
+        <h2 class="company-name">BELAIR SYSTEMS</h2>
     </div>
-    <form action="login.php" method="POST">
-        <label for="username">ユーザー名:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">パスワード:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="ログイン">
-    </form>
-    <h2 class="company-name">"Valuing People, Inspiring Growth"</h2>
+    <div class="center">
+        <h2 class="slogan">"Valuing People, Inspiring Growth"</h2>
+    </div>
+    <br> <!-- 追加：少しの間隔を開ける -->
+    <div class="center">
+        <form action="login.php" method="POST">
+            <label for="username">ユーザー名:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">パスワード:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="ログイン">
+        </form>
+    </div>
 </body>
 </html>
